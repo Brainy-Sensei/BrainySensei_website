@@ -9,13 +9,13 @@ const AboutSection = () => {
       <div className="about-container">
         <div className="about-image">
           <img
-            src={team}
+            src={team2}
             alt="Team working"
             className="about-img"
           />
           <div className="about_img2">
           <img
-            src={team2}
+            src={team}
             alt="Team working"
             className="about-img"
 
