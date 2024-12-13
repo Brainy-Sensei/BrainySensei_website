@@ -1,18 +1,16 @@
 import React from "react";
 import Navbar from "./componets/Navbar";
 import HeroSection from "./componets/HeroSection";
+import AboutSection from "./componets/AboutSection";
 
 
 const App =() =>{
   return(
     <div>
       <Navbar />
-      <HeroSection
-        background="background.jpg"
-        subtitle="We Are Here"
-        title="Empowering Businesses with Scalable and Secure Technology"
-        buttonText="View More"
-      />
+      <HeroSection   />
+      <AboutSection />
+     
     </div>
 
   );

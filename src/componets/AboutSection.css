@@ -1,0 +1,80 @@
+/* About Section Container */
+.about-section {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-container {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    background-color: #F7F7F7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Image Styling */
+  .about-image {
+    flex: 1;
+  }
+  
+  .about-img {
+    position: relative;
+    width: 100%;
+    border-radius: 8px;
+     object-fit: cover; 
+  }
+  .about-img2{
+  }
+  
+  /* Content Section */
+  .about-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 20px;
+  }
+  
+  .about-subtitle {
+    color: #ff6600;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .about-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .about-description {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Button Styling */
+  .about-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .about-button:hover {
+    background-color: #e65500;
+  }
+  
