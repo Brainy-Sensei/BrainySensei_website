@@ -6,10 +6,11 @@ import AboutSection from "./componets/AboutSection";
 
 const App =() =>{
   return(
-    <div>
+    <div className="App">
       <Navbar />
       <HeroSection   />
       <AboutSection />
+      
      
     </div>
 
