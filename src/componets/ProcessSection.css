@@ -19,7 +19,7 @@
     text-align: center;
    
     background-color: #FFFFFF;
-    transform: translateY(-29.5rem)
+    transform: translateY(-28.5rem)
   }
   
   .process-title {
@@ -48,7 +48,7 @@
     border-radius: 8px;
     font-size: 20px;
     line-height: 26px;
-    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
     padding: 2.5rem;
     text-align: justify;
     position: relative;
@@ -57,16 +57,16 @@
   
   .process-card:hover {
     transform: translateY(-5px);
-     /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  
   }
   
   .process-step-number {
     position: absolute;
-    top: 1rem;
+    top: 2rem;
     left: 12rem;
     font-size: 2rem;
     font-weight: bold; 
-    color: #f5f5f5;
+    color: #0E1F51;
   }
   
   .process-icon {
