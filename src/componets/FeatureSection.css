@@ -10,7 +10,7 @@ body {
 }
 
 .feature-container {
-  background-color: #0d1b3e;
+  background-color: #0E1F51;
   color: #ffffff;
   padding: 0rem;
   display: flex;
@@ -67,13 +67,13 @@ body {
   line-height: 35px;
   margin-bottom: 1.0rem;
   padding: 10px 20px 0px 110px;
-  color: #dcdcdc;
+  color: #FFFFFF;
   text-align: justify;
   transform: translateX(-7.0rem);
 }
 
 .feature-button {
-  background-color: #ff5400;
+  background-color: #F45E31;
   color: #ffffff;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -85,7 +85,7 @@ body {
 }
 
 .feature-button:hover {
-  background-color: #e04b00;
+  background-color: #F45E31;
 }
 
 /* Responsive Design */
