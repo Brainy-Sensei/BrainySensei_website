@@ -1,0 +1,54 @@
+.technologies-container {
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .category {
+    margin: 20px 0;
+  }
+  
+  h4 {
+    font-size: 1.25rem;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  .icons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #007BFF;
+    transition: transform 0.3s ease;
+  }
+  
+  .icon-item span {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  .icon-item:hover {
+    transform: scale(1.1);
+    color: #0056b3;
+  }
+  

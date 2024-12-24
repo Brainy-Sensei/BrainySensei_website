@@ -3,9 +3,12 @@ import Navbar from "./componets/Navbar";
 import HeroSection from "./componets/HeroSection";
 import AboutSection from "./componets/AboutSection";
 import ProcessSection from "./componets/ProcessSection";
-
 import ProductSection from "./componets/FeatureSection";
 import FeatureSection from "./componets/FeatureSection";
+// import Team from "./componets/Team";
+// import Technologies from "./componets/Technologies";
+
+import Services from "./componets/Services";
 
 
 const App =() =>{
@@ -16,6 +19,9 @@ const App =() =>{
       <AboutSection />
       <ProcessSection />
       <FeatureSection />
+      <Services />
+      {/* <Team />
+      <Technologies /> */}
       
       
      

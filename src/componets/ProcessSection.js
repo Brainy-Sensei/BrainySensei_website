@@ -3,6 +3,7 @@ import './ProcessSection.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faPencilRuler, faCode, faVial } from '@fortawesome/free-solid-svg-icons';
 
+
 const processSteps = [
   {
     step: '01',
@@ -16,21 +17,21 @@ const processSteps = [
     title: 'Design',
     description:
       'We design wireframes, prototypes, and user interfaces to ensure seamless usability and functionality.',
-    icon: faPencilRuler,
+     icon: faPencilRuler,
   },
   {
     step: '03',
     title: 'Develop',
     description:
       'We write clean code using modern technologies and frameworks to build fast and high-performing software.',
-    icon: faCode,
+     icon: faCode,
   },
   {
     step: '04',
     title: 'Test',
     description:
       'We rigorously test for bugs, usability, and performance to ensure high-quality applications.',
-    icon: faVial,
+     icon: faVial,
   },
 ];
 
