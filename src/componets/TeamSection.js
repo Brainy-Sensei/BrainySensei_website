@@ -1,27 +1,33 @@
 import React from "react";
-import "./Team.css";
+import "./TeamSection.css";
+import AbhishekShankar from "../image/abhishek-shankar.jpg";
+import ShwetaSrivastava from "../image/shweta-srivastava.jpg";
+import DhariniPandey from "../image/dharini-panday.jpg";
+import PoojaDhaker from "../image/pooja-dhaker.jpg";
 
-const Team = () => {
+
+
+const TeamSection = () => {
   const teamMembers = [
     {
       name: "Abhishek Shankar",
       role: "Founder",
-      image: "path-to-image-1.jpg", // Replace with actual image paths
+      image: AbhishekShankar , // Replace with actual image paths
     },
     {
       name: "Shweta Srivastava",
       role: "UI/UX Designer",
-      image: "path-to-image-2.jpg",
+      image: ShwetaSrivastava,
     },
     {
-      name: "Dhaniri Pandey",
+      name: "Dharini Pandey",
       role: "Software Developer",
-      image: "path-to-image-3.jpg",
+      image: DhariniPandey,
     },
     {
       name: "Pooja Dhaker",
       role: "Software Developer",
-      image: "path-to-image-4.jpg",
+      image: PoojaDhaker ,
     },
   ];
 
@@ -31,7 +37,7 @@ const Team = () => {
       <h2>Our Team</h2>
       <div className="team-container">
         {teamMembers.map((member, index) => (
-          <div key={index} className="team-member">
+          <div className="team-card" key={index}>
             <img src={member.image} alt={member.name} className="team-image" />
             <h3>{member.name}</h3>
             <p>{member.role}</p>
@@ -42,4 +48,4 @@ const Team = () => {
   );
 };
 
-export default Team;
+export default TeamSection;
