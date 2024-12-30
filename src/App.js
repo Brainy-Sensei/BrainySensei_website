@@ -8,7 +8,7 @@ import FeatureSection from "./componets/FeatureSection";
 import Services from "./componets/Services";
 import TeamSection from "./componets/TeamSection";
 import Technologies from "./componets/Technologies";
-import Testimonials from "./componets/Testimonials";
+ import Testimonials from "./componets/Testimonials";
 
 
 
@@ -24,7 +24,7 @@ const App =() =>{
       <Services />
       <TeamSection />
       <Technologies /> 
-      {/* <Testimonials />   */}
+      <Testimonials /> 
       
       
      
