@@ -2,7 +2,8 @@
   text-align: center;
   padding: 0px 0px;
   background-color: #FFFFFF;
-  transform: translateY(-19.0rem);
+  height: 225px;
+   transform: translateY(-19.0rem); 
 }
 
 .testimonials-header {
