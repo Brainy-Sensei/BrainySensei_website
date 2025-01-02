@@ -1,32 +1,30 @@
 import React from "react";
 import "./Footer.css";
+import logo from "../image/logo.png"; // Replace with your actual logo path
 import { FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="footer-container">
-      <div className="footer-section">
-        <div className="footer-brand">
-          <h2>Brainy Sensei</h2>
-          <p>
+    <footer className="footer">
+      <div className="footer-container">
+        {/* Brainy Sensei Section */}
+        <div className="footer-section brainy-sensei">
+          <img src={logo} alt="Brainy Sensei Logo" className="footer-logo" />
+          <h4 className="footer-title">Brainy Sensei</h4>
+          <p className="footer-title1">
             Better insights drive smarter decisions, stronger relationships, and
             new growth opportunities for long-term success.
           </p>
-          <div className="social-icons">
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin />
-            </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-              <FaInstagram />
-            </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-              <FaTwitter />
-            </a>
+          <div className="social-icons1">
+            <FaLinkedin className="icon1" />
+            <FaInstagram className="icon1" />
+            <FaTwitter className="icon1" />
           </div>
         </div>
 
-        <div className="footer-links">
-          <h3>Services</h3>
+        {/* Services Section */}
+        <div className="footer-section">
+          <h4>Services</h4>
           <ul>
             <li>Software Development</li>
             <li>Generative AI</li>
@@ -37,8 +35,9 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="footer-links">
-          <h3>Quick Link</h3>
+        {/* Quick Links Section */}
+        <div className="footer-section">
+          <h4>Quick Link</h4>
           <ul>
             <li>Home</li>
             <li>About</li>
@@ -48,11 +47,12 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="footer-contact">
-          <h3>Get in touch</h3>
-          <p>Better Insights For Business Growth</p>
+        {/* Get in Touch Section */}
+        <div className="footer-section get-in-touch">
+          <h4>Get in touch</h4>
+          <p className="p">Better Insights For Business Growth</p>
           <form>
-            <input type="email" placeholder="Email" />
+            <input type="email" placeholder="Email" required />
             <button type="submit">Submit</button>
           </form>
         </div>

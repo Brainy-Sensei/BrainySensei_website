@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 0px;
     background-color: #ffff;
   }
   
@@ -10,10 +10,11 @@ body {
     /* flex-wrap: wrap;  */
     justify-content: center;
     align-items: center;
-    padding: 80px ;
+    padding: 90px ;
     background-color: #0E1F51E5; 
     color: #ffff; 
-    gap: 10px;
+    gap: 15px;
+    /* transform: translateY(-8.5rem); */
    
   }
   
@@ -65,7 +66,7 @@ body {
   .contact-form textarea {
     width: 100%;
     margin: 10px 0;
-    padding: 18px;
+    padding: 19px;
     background-color: #F7F7F7;
     border: 1px solid #ccc; 
     border-radius: 10px; 
@@ -96,8 +97,8 @@ body {
   .info-section {
     flex: 1 1 400px;
     padding: 30px;
-    max-width: 300px;
-    height: 390px;
+    max-width: 320px;
+    height: 400px;
     background-color: #ffff;
     /* padding: 20px; */
     border-radius: 10px;
@@ -105,6 +106,8 @@ body {
   }
   
   .contact-info {
+    font-size: 14px;
+    line-height: 16px;
     margin-bottom: 20px;
     color: #000000; 
     text-align: justify;
@@ -115,13 +118,14 @@ body {
    
   }
   .contact-icon{
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     text-align: left;
-   margin: 0px;
+    align-items: center;
+    margin: 0px;
     color: #F45E31;
     background-color:#F7F7F7 ;
-    padding: 5px;
+    padding: 9px;
   }
   
   .contact-info p {
@@ -139,16 +143,19 @@ body {
     padding: 0px 40px;
     text-align: justify;
     align-items: center; 
-    transform: translateY(-2.0rem);  
+   transform: translateY(-2.0rem);  
     
   }
   .social{
-   font-size: 16px;
+   
+   font-size: 17px;
    font-weight: bold;
    color: #004AAB;
-   text-align: right;
-   padding: 60px 0px 0px 50px;
-   margin-top: 25px;
+   text-align:  center;
+   padding: 20px 40px 0px 50px;
+   
+  
+  
    
   
 
@@ -156,12 +163,13 @@ body {
   
   .social-icons {
    margin-bottom: 0px;
-   display: flex;
-   flex-wrap: wrap;
+   display: flex; 
+   flex-wrap: wrap; 
    color: #F45E31; 
-   text-align: left;
-   font-size: 10px;
-   transform: translateY(-7.9rem)
+   text-align: right;
+   font-size: 14px;
+   transform: translateY(-3.5rem);
+  
   
          
     
@@ -169,7 +177,7 @@ body {
   
   .social-icons .icons {
     display: flex;
-    gap: 10px;
+    gap: 18px;
     font-size: 1.5rem; 
    
   }
@@ -179,7 +187,7 @@ body {
     color: #ffff;
     font-size: 25px;
     background-color: #F45E31;  
-    margin: 5px;
+    margin: 1px;
     padding: 1px;
     border-radius: 10px;
    
