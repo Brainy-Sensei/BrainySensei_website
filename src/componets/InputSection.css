@@ -118,7 +118,7 @@ body {
     width: 30px;
     height: 30px;
     text-align: left;
-   
+   margin: 0px;
     color: #F45E31;
     background-color:#F7F7F7 ;
     padding: 5px;
@@ -143,21 +143,26 @@ body {
     
   }
   .social{
-   font-size: 17px;
+   font-size: 16px;
    font-weight: bold;
    color: #004AAB;
-   text-align: center;
-   padding: 0px 60px 0px 0px;
+   text-align: right;
+   padding: 60px 0px 0px 50px;
+   margin-top: 25px;
+   
+  
 
   }
   
   .social-icons {
-   margin-bottom: 80px;
-   top: 20px;
+   margin-bottom: 0px;
+   display: flex;
+   flex-wrap: wrap;
    color: #F45E31; 
-    
+   text-align: left;
    font-size: 10px;
-   transform: translateY(-20px);
+   transform: translateY(-7.9rem)
+  
          
     
   }

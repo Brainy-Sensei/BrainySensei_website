@@ -10,6 +10,7 @@ import TeamSection from "./componets/TeamSection";
 import Technologies from "./componets/Technologies";
 import Testimonials from "./componets/Testimonials";
 import InputSection from "./componets/InputSection";
+import Footer from "./componets/Footer";
 
 
 
@@ -28,9 +29,7 @@ const App =() =>{
       <Technologies /> 
       <Testimonials /> 
       <InputSection />
-      
-      
-     
+      {/* <Footer />     */}
     </div>
 
   );

@@ -1,0 +1,125 @@
+/* Footer Styling */
+.footer-container {
+    background-color: #0a2447;
+    color: white;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .footer-brand {
+    flex: 1 1 250px;
+    margin: 20px;
+  }
+  
+  .footer-brand h2 {
+    color: orange;
+    margin-bottom: 10px;
+  }
+  
+  .footer-brand p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .social-icons a {
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+  }
+  
+  .social-icons a:hover {
+    color: orange;
+  }
+  
+  .footer-links {
+    flex: 1 1 150px;
+    margin: 20px;
+  }
+  
+  .footer-links h3 {
+    color: orange;
+    margin-bottom: 15px;
+  }
+  
+  .footer-links ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin: 10px 0;
+    font-size: 14px;
+  }
+  
+  .footer-links li:hover {
+    color: orange;
+    cursor: pointer;
+  }
+  
+  .footer-contact {
+    flex: 1 1 250px;
+    margin: 20px;
+  }
+  
+  .footer-contact h3 {
+    color: orange;
+    margin-bottom: 10px;
+  }
+  
+  .footer-contact p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-contact form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-contact input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .footer-contact button {
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .footer-contact button:hover {
+    background-color: #e69500;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .footer-section {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .footer-brand,
+    .footer-links,
+    .footer-contact {
+      flex: 1 1 100%;
+      margin: 10px 0;
+    }
+  }
+  
