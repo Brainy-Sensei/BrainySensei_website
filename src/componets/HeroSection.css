@@ -1,55 +1,74 @@
-/* Reset Styles */
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Hero Section */
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-family: "Raleway", serif;
+}
+
+/* Hero Section Styles */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  width: 100%;
+  background-image: url("../image/background.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #FFFFFF;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin-left: 10%;
+  z-index: 2;
+}
+
+.hero-subtitle {
+  font-size: 20px;
+  line-height: 20px;
+  color: #F45E31;
+  font-weight: 700;
+  margin-bottom: 5px;
+  transform: translateY(1.0rem);
+}
+
+.hero-title {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.hero-button {
+  padding: 10px 20px;
+  background-color: #F45E31;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #F45E31;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .hero-section {
-    position: relative;
-    height: 100vh;
-    background: url("../image/background.jpg") no-repeat center center/cover;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    color: white;
-    padding: 0px 230px ;
+    justify-content: center;
+    text-align: center;
   }
-  
+
   .hero-content {
-    max-width: 600px;
+    margin-left: 0;
+    padding: 20px;
   }
-  
-  .hero-subtitle {
-    font-size: 24px;
-    line-height: 15px;
-    /* font-weight: bold; */
-    color: #F45E31;
-    margin-bottom: 20px;
-   
-  }
-  
+
   .hero-title {
-    font-size: 38.5px;
-    font-weight: bold;
-    line-height: 1.4;
-    margin-bottom: 20px;
+    font-size: 28px;
   }
-  
-  .hero-button {
-    padding: 15px 35px;
-    font-size: 16px;
-    background-color: #F45E31;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-right: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .hero-button:hover {
-    background-color: #F45E31;
-  }
-  
+}

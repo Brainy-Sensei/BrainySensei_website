@@ -1,101 +1,163 @@
-/* Basic Reset */
-body, html, ul, li {
-    margin: 0;
-    padding: 0;
-    list-style: none; 
-   
+/* General Reset */
+body, ul, li {
+  margin: 0;
+  padding: 0;
+   font-family: "Raleway", serif; 
+   list-style: none; 
+  box-sizing: border-box;
+  
+}
 
-  }
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 100px;
+  background-color: #FFFFFF;
+  color: #F45E31;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1000;
+}
+
+/* Logo Section */
+.navbar-logo {
+  display: flex;
+  align-items: center;
   
-  /* Navbar Container */
-  .navbar {
-    
-    background-color: #FFFFFF;
+
+}
+
+.logo {
+  height: 48px;
+  margin-right: 10px;
+}
+
+.navbar-logo span {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0E1F51;
+}
+
+/* Navbar Links */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  
+  transition: all 0.3s ease;
+  
+}
+
+.navbar-links li {
+  font: raleway;
+  font-size: 17px;
+  cursor: pointer;
+  color: #0E1F51;
+  
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #0E1F51;
+  transition: color 0.3s ease;
+ 
+}
+
+.navbar-links a:hover {
+  color: #F45E31;
+  text-decoration: underline;
+}
+
+/* "Get In Touch" Button */
+.navbar-button {
+
+  background-color: #F45E31;
+  color: #FFFFFF;
+  border: none;
+  padding: 17px 17px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  
+
+}
+
+.navbar-button:hover {
+  background-color: #F45E31;
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color:  #F45E31;
+  border-radius: 5px;
+  transition: all 0.3s ease; 
+  
+}
+
+/* Rotate bars when menu is open */
+.menu-toggle.open .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.open .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .menu-toggle {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px 120px 40px;  
-    
-/* border-bottom: 2px solid #f0f0f0; */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
-  
-  /* Logo Section */
-  .navbar-logo {
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    font-family: Arial, sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 28.8px;
-    color: #0E1F51;
-  }
-  
-  .logo {
-    
-    height: 45px;
-    margin-right: 8px;
-  }
-  
-  /* Navbar Menu */
-  .navbar-menu {
-    display: flex;
-    gap: 20px;
-    
-    
-  }
-  
-  .nav-item {
-    
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: #0E1F51;
-    line-height: 20px;
-    cursor: pointer;
-    left: 110px;
-    position: relative;
-    
-  }
-  
-  .nav-item:hover {
-    color: #F45E31;
-  }
-  
-  .active {
-    color: #F45E31;
-  }
-  
-  .active::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 2px; 
-    background-color: #F45E31;
+
+  .navbar-links {
     position: absolute;
-     bottom: -4px; 
+    top: 100%;
     left: 0;
-  }
-  
-  /* Contact Button */
-  .contact-button {
+    background-color: #FFFFFF;
+    flex-direction: column;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
    
-    
-    padding: 10px 10px; 
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    background-color: #F45E31;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  
-    transition: background-color 0.3s;  
-    
+    transition: height 0.3s ease, opacity 0.3s ease;
   }
-  
-  .contact-button:hover {
 
-    background-color: #F45E31;
+  .navbar-links.show {
+    height: auto;
+    opacity: 1;
+    padding: 10px 0;
   }
-  
+
+  .navbar-links li {
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ffffff33;
+  }
+
+  .navbar-links li:last-child {
+    border-bottom: none;
+  }
+
+  .navbar-button {
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+  }
+}

@@ -1,0 +1,109 @@
+/* General Section Styling */
+.process {
+  padding: 3rem 1.5rem;
+  text-align: center;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.process-subtitle {
+  color: #e63946;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.process-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+/* Steps Container */
+.process-steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.process-card {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 22%;
+  min-width: 250px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.process-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Card Header */
+.process-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.process-icon {
+  font-size: 2.5rem;
+  color: #e63946;
+}
+
+.process-number {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+/* Card Content */
+.process-content {
+  flex-grow: 1;
+  margin-left: 1rem;
+}
+
+.process-card-title {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 0.25rem;
+}
+
+.process-card-description {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .process-steps {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .process-card {
+    width: 90%;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .process-card-header {
+    margin-bottom: 1rem;
+  }
+
+  .process-content {
+    margin-left: 0;
+  }
+}
