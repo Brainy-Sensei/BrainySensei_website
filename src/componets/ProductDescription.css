@@ -1,0 +1,116 @@
+body{
+  margin: 0;
+  padding: 0;
+   font-family: "Raleway", serif; 
+   list-style: none; 
+  box-sizing: border-box;
+}
+.product-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px ;
+  background-color: #0E1F51;
+  color: #FFFFFF;
+}
+
+.product-image img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  border-radius: 10px;
+  padding: 0px;
+}
+
+.product-content {
+  max-width: 450px;
+  padding: 20px 40px 40px;
+ 
+  
+}
+
+.product-content h4 {
+  color: #F45E31;
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+   transform: translateY(1rem); 
+}  
+
+.product-content h2 {
+  font-size: 30px;
+  font-weight: 700;
+  /* text-align: justify; */
+  margin-bottom: 20px;
+  line-height: 1.4;
+   padding: 10px 0px;
+  word-spacing: 0; /* Removes extra space between words */
+ letter-spacing: normal; /* Resets any letter spacing */
+
+  
+}
+
+.product-content p {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: justify;
+   margin-bottom: 30px; 
+  padding: 0px 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-spacing: 0; /* Removes extra space between words */
+  letter-spacing: normal;
+  transform: translateY(-1.0rem);
+   /* Resets any letter spacing */
+}
+
+.view-more-button {
+  background-color: #F45E31;
+  color: #FFFFFF;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transform: translateY(-1.5rem);
+  /* transform: translate(3.6rem); */
+}
+
+.view-more-button:hover {
+  background-color: #F45E31;
+}
+
+@media (max-width: 768px) {
+  .product-container {
+    flex-direction: column;
+   
+  }
+
+  .product-content {
+    font-size: 14px;
+    
+   
+  
+  }
+  .product-container h2{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+   
+  }
+  .product-content p{
+    text-align: justify;
+    font-size: 14px;
+    line-height: 25px;
+    
+    
+    
+  }
+
+  .product-image img {
+    max-width: 100%;
+  }
+}

@@ -3,12 +3,12 @@ import Navbar from "./componets/Navbar";
 import HeroSection from "./componets/HeroSection";
 import OverlapSection from "./componets/OverlapSection";
  import Process from "./componets/Process";
-import WhatWeDo from"./componets/WhatWeDo";
+ import ProductDescription from"./componets/ProductDescription";
 
 //  import ProcessSection from "./componets/ProcessSection";
 //  import ProductSection from "./componets/FeatureSection";
  
-//  import Services from "./componets/Services";
+ import Services from "./componets/Services";
 //  import TeamSection from "./componets/TeamSection";
 //  import Technologies from "./componets/Technologies";
 //  import Testimonials from "./componets/Testimonials";
@@ -24,17 +24,18 @@ const App =() =>{
   return(
     <div className="App">
       <Navbar />
-        <HeroSection  />
+         <HeroSection  />
        < OverlapSection />
             <Process />   
-         <WhatWeDo />  
+           <ProductDescription />
+          {/* <WhatWeDo />    */}
        {/* <FeatureSection /> */}
-      {/* <Services />
-      <TeamSection />
+         <Services />  *
+       {/* <TeamSection />
       <Technologies /> 
       <Testimonials /> 
       <InputSection />
-       <Footer />         */}  
+       <Footer />            */} 
     </div>
 
   );
