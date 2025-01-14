@@ -11,12 +11,12 @@ const OverlapSection = () => {
         <div className="overlapping-images">
           <img
             src={image}
-            alt="Main"
+            alt="Main workspace"
             className="main-image"
           />
           <img
             src={image1}
-            alt="Overlap"
+            alt="Overlapping workspace"
             className="overlap-image"
           />
         </div>
@@ -25,12 +25,10 @@ const OverlapSection = () => {
         <h2>Who we are</h2>
         <h1>Innovative Software Solutions Tailored for Your Success</h1>
         <p>
-           We are a team of skilled professionals specializing in 
-           Software Development, AI, EdTech solutions, and LLMs and
-           chatbots, all united by a common goal of ensuring customer 
-           satisfaction. Our focus is on delivering innovative and 
-           comprehensive web solutions that enhance your business
-           through technology.
+          We are a team of skilled professionals specializing in Software
+          Development, AI, EdTech solutions, LLMs, and chatbots. Our goal is to
+          ensure customer satisfaction by delivering innovative solutions that
+          enhance your business through technology.
         </p>
         <button className="cta-button">View More</button>
       </div>

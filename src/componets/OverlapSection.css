@@ -1,17 +1,19 @@
-/* Main Section */
-body {
+/* Section Styling */
+body{
   margin: 0;
-  font-family: Arial, sans-serif;
-  font-family: "Raleway", serif;
+  padding: 0;
+   font-family: "Raleway", serif; 
+   list-style: none; 
+  box-sizing: border-box;
 }
-
 .overlap-section {
+
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding: 20px 80px;
- 
+  /* gap: 20px; */
   background-color: #F7F7F7;
 }
 
@@ -21,113 +23,125 @@ body {
   max-width: 50%;
   display: flex;
   justify-content: center;
+  padding: 120px 10px 10px 120px;
+  
 }
 
 .overlapping-images {
   position: relative;
   display: inline-block;
+  
 }
 
 .main-image,
 .overlap-image {
-  width: 495px;
-  height: 440px;
-   object-fit: cover; 
+  width: 501px;
+  height: 446px;
+  object-fit: cover;
   border-radius: 8px;
- transform: translateY(4.0rem); 
-} 
+}
 
 .overlap-image {
   position: absolute;
-   bottom: 45px;
-  right:  45px; 
+  bottom: 50px;
+  right: 50px;
   z-index: 1;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Content Container */
+/* Content Styling */
 .content-container {
   flex: 1;
   max-width: 50%;
   display: flex;
   flex-direction: column;
-  padding: 60px 80px 0px;
-  transform: translate(-3.0rem);
-
-  /* gap: 15px; */
+  padding: 60px 40px 40px 60px;
+ 
+   
+   
 }
 
 .content-container h2 {
   font-size: 18px;
-  line-height: 20px;
+  line-height: 10px;
   color: #F45E31;
   text-transform: uppercase;
+  
+  
  
+}
+.content-container h1 {
+  font-size: 30px;
+   line-height: 40px; 
+  color: #0E1F51;
  
   
+  
+ /* transform: translateY(-2.0rem); */
 }
 
-.content-container h1 {
-  font-size: 35px;
-  line-height: 45px;
-  color: #0E1F51;
-  transform: translateY(-2.0rem);
-  
-}
 .content-container p {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 30px;
   color: #000000;
   text-align: justify;
-  transform:  translateY(-3.5rem); 
-  
+  /* transform: translateY(-3.0rem); */
 }
 
 .cta-button {
-   width: 137px; 
- 
+  width: 137px;
+  
   background-color: #F45E31;
   color: #FFFFFF;
   padding: 15px 20px;
   border: none;
   border-radius: 5px;
-  font-size: 14px;
+  font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  transform:  translateY(-2.0rem);
+ 
 }
 
 .cta-button:hover {
-  background-color: #F45E31;
+  background-color: #e64a19;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .overlap-section {
     flex-direction: column;
+    align-items: center;
   }
 
   .image-container,
   .content-container {
     max-width: 100%;
+    padding: 30px 15px 15px 30px;
+    
   }
 
   .main-image,
   .overlap-image {
-    width: 100%;
-    height: auto;
+   
+     width: 100%;
+    height: auto; 
+    
   }
 
   .overlap-image {
-    bottom: 35px;
+    bottom: 22px;
     right: 25px;
+    
   }
 
   .content-container h1 {
-    font-size: 24px;
+    font-size: 1.1rem
+    
   }
 
   .content-container p {
     font-size: 14px;
+    
+    
   }
 }

@@ -12,7 +12,7 @@ body, ul, li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 100px;
+  padding: 20px 80px;
   background-color: #FFFFFF;
   color: #F45E31;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -138,6 +138,10 @@ body, ul, li {
    
     transition: height 0.3s ease, opacity 0.3s ease;
   }
+  .navbar-logo span {
+    font-size: 10px;
+    font-weight: 700;
+  }
 
   .navbar-links.show {
     height: auto;
@@ -156,8 +160,8 @@ body, ul, li {
   }
 
   .navbar-button {
-    width: 80%;
-    margin: 10px auto;
+    width: 100%;
+    margin: 5px auto;
     text-align: center;
   }
 }

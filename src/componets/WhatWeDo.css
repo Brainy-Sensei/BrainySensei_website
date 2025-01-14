@@ -1,0 +1,113 @@
+/* src/components/WhatWeDo.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-family: "Raleway", serif;
+}
+.what-we-do-container {
+ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0E1F51;
+  padding: 20px 60px;
+  color: #FFFFFF;
+  border-radius: 8px;
+  
+}
+
+.image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+ 
+ 
+  
+ 
+}
+
+.image-section img {
+  width: 100%;
+  max-width: 450px;
+  height: 450px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  
+ 
+  
+  
+}
+
+.square-image {
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 8px;
+  
+ 
+}
+
+.text-section {
+  flex: 1;
+  margin-left: 10px;
+  max-width: 600px;
+  height: auto;
+  text-align: justify;
+  padding: 30px 120px 60px 120px;
+  transform: translate(-3.5rem);
+}
+
+.text-section h2 {
+  font-size: 1.5em;
+  color: #F45E31;
+}
+
+.text-section h1 {
+  font-size: 2rem;
+  /* text-align: justify; */
+  /* margin: 10px 0; */
+}
+
+.text-section p {
+  font-size: 20px;
+  line-height: 30px;
+  margin: 20px 0;
+}
+
+.text-section button {
+  background-color: #F45E31;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .what-we-do-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-section {
+    margin-left: 0;
+    padding: 0px 0px 0px 110px;
+  }
+
+  .text-section h1 {
+    font-size: 1.5rem;
+  }
+  .text-section p{
+    font-size: 12px;
+    text-align: justify;
+  }
+
+  .square-image {
+    max-width: 400px;
+  }
+}

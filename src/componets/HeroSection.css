@@ -17,12 +17,22 @@ body {
   background-position: center;
   position: relative;
   color: #FFFFFF;
+ 
 }
 
 .hero-content {
   max-width: 600px;
   margin-left: 10%;
   z-index: 2;
+  width: 797px;
+  height: 222.66px;
+  margin-right: 50px;
+  padding: 110px;
+
+border-radius: 5px 0px 0px 0px;
+opacity: 0px;
+/* transform: translate(6.5rem); */
+
 }
 
 .hero-subtitle {
@@ -35,14 +45,14 @@ body {
 }
 
 .hero-title {
-  font-size: 36px;
+  font-size: 35px;
   font-weight: bold;
   line-height: 1.4;
   margin-bottom: 20px;
 }
 
 .hero-button {
-  padding: 10px 20px;
+  padding: 15px 30px;
   background-color: #F45E31;
   color: #FFFFFF;
   border: none;
@@ -64,7 +74,7 @@ body {
   }
 
   .hero-content {
-    margin-left: 0;
+    margin-left: 20px;
     padding: 20px;
   }
 
