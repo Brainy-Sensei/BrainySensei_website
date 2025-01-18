@@ -1,213 +1,163 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0px;
-    background-color: #ffff;
-  }
-  
+/* InputSection.css */
+
+/* General Layout */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #f4f4f4;
+}
+
+.form-section {
+  flex: 1 1 45%;  /* Default width for larger screens */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.form-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Info Section */
+.info-section {
+  flex: 1 1 45%;  /* Default width for larger screens */
+  padding: 20px;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contact-icon {
+  font-size: 2rem;
+  color: #007bff;
+  margin-right: 15px;
+}
+
+.contact-details p {
+  font-weight: bold;
+  color: #333;
+}
+
+.contact-details span {
+  color: #666;
+}
+
+.social-icons {
+  margin-top: 30px;
+}
+
+.social-icons .social {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.social-icons .icons a {
+  font-size: 1.5rem;
+  color: #333;
+  margin-right: 15px;
+  transition: color 0.3s;
+}
+
+.social-icons .icons a:hover {
+  color: #007bff;
+}
+
+/* Responsive Styles for Tablets and Mobile */
+@media (max-width: 768px) {
   .contact-container {
-    display: flex;
-    /* flex-wrap: wrap;  */
-    justify-content: center;
-    align-items: center;
-    padding: 90px ;
-    background-color: #0E1F51E5; 
-    color: #ffff; 
-    gap: 15px;
-    /* transform: translateY(-8.5rem); */
-   
-  }
-  
-  .form-section {
-    flex: 1 1 400px;  
-    padding: 0px 0px 0px;
-    max-width: 500px;
-    
-    
-    
-   
-    
-  }
-  
-  .form-section h2 {
-    font-size: 18px;
-    line-height: 24px;
-    color: #F45E31;
-    margin: 0;
-    text-align: center;   
-    align-items: center;
-    padding: 0px 0px 0px 200px;
-    transform: translateY(2rem);
-    
-  }
-  
- 
-  
-  .form-section h3 {
-    font-size: 28px;
-    line-height: 40px;
-    margin-bottom: 10px;
-    text-align: right;
-    align-items: center;
-    color: #FFFFFF;
-   padding: 0px 40px 35px 0px;
-   transform: translateY(2rem);
-  }
-  
-  .contact-form {
-    display: flex;
     flex-direction: column;
-    background-color: #ffff;
-    padding: 20px;
-    border-radius: 10px;
+    align-items: center;  /* Center content for smaller screens */
   }
-  
+
+  .form-section,
+  .info-section {
+    flex: 1 1 100%;  /* Full width for mobile */
+    margin-bottom: 20px;
+  }
+
   .contact-form input,
   .contact-form textarea {
-    width: 100%;
-    margin: 10px 0;
-    padding: 19px;
-    background-color: #F7F7F7;
-    border: 1px solid #ccc; 
-    border-radius: 10px; 
-   
-   
+    font-size: 0.9rem;  /* Slightly smaller font on mobile */
   }
-  
-  .contact-form button {
-    width: 115px;
-   height: 45px;
-   top: 6647px;
-   left: 180px;
-   gap: 0px;
-   border-radius: 5px 0px 0px 0px;
-   opacity: 0px;
-   background-color: #F45E31;
-   color: white;
-   border: none;
-   padding: 10px;
-   cursor: pointer;
-   border-radius: 5px;
-  }
-  
-  .contact-form button:hover {
-    background-color: #F45E31;
-  }
-  
-  .info-section {
-    flex: 1 1 400px;
-    padding: 30px;
-    max-width: 320px;
-    height: 400px;
-    background-color: #ffff;
-    /* padding: 20px; */
-    border-radius: 10px;
-    transform: translateY(3.2rem)
-  }
-  
-  .contact-info {
-    font-size: 14px;
-    line-height: 16px;
-    margin-bottom: 20px;
-    color: #000000; 
-    text-align: justify;
-    align-items: center;
-    margin: auto;
-  
-    
-   
-  }
-  .contact-icon{
-    width: 35px;
-    height: 35px;
-    text-align: left;
-    align-items: center;
-    margin: 0px;
-    color: #F45E31;
-    background-color:#F7F7F7 ;
-    padding: 9px;
-  }
-  
-  .contact-info p {
-    font-weight: bold;
-    margin: 0;
-    color: #F45E31; 
-    padding: 10px 50px 0px;  
-    
-  }
-  
-  
-  .contact-info span {
-    display: block;
-    margin-top: 5px; 
-    padding: 0px 40px;
-    text-align: justify;
-    align-items: center; 
-   transform: translateY(-2.0rem);  
-    
-  }
-  .social{
-   
-   font-size: 17px;
-   font-weight: bold;
-   color: #004AAB;
-   text-align:  center;
-   padding: 20px 40px 0px 50px;
-   
-  
-  
-   
-  
 
+  .contact-form button {
+    font-size: 0.9rem;
   }
-  
-  .social-icons {
-   margin-bottom: 0px;
-   display: flex; 
-   flex-wrap: wrap; 
-   color: #F45E31; 
-   text-align: right;
-   font-size: 14px;
-   transform: translateY(-3.5rem);
-  
-  
-         
-    
+
+  .contact-icon {
+    font-size: 1.5rem;  /* Smaller icon size for mobile */
   }
-  
-  .social-icons .icons {
-    display: flex;
-    gap: 18px;
-    font-size: 1.5rem; 
-   
+
+  .social-icons .icons a {
+    font-size: 1.2rem;
   }
-  
-  .social-icons .icons > * {
-    cursor: pointer;
-    color: #ffff;
-    font-size: 25px;
-    background-color: #F45E31;  
-    margin: 1px;
-    padding: 1px;
-    border-radius: 10px;
-   
- 
+}
+
+/* Further Adjustments for Small Mobile Devices */
+@media (max-width: 480px) {
+  .form-section h2 {
+    font-size: 1.5rem;  /* Smaller font size for headings */
   }
-  
-  .social-icons .icons > *:hover {
-    color: #F45E31;
-    
+
+  .form-section h3 {
+    font-size: 1rem;
   }
-  
-  @media screen and (max-width: 768px) {
-    .contact-container {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .form-section,
-    .info-section {
-      max-width: 100%;
-    }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.9rem;  /* Adjust input and textarea font size */
   }
-  
+
+  .contact-form button {
+    font-size: 0.9rem;
+  }
+
+  .contact-icon {
+    font-size: 1.3rem;  /* Further reduce icon size */
+  }
+
+  .social-icons .icons a {
+    font-size: 1.2rem;  /* Adjust icon size */
+  }
+}

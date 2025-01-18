@@ -4,15 +4,11 @@ import HeroSection from "./componets/HeroSection";
 import OverlapSection from "./componets/OverlapSection";
  import Process from "./componets/Process";
  import ProductDescription from"./componets/ProductDescription";
-
-//  import ProcessSection from "./componets/ProcessSection";
-//  import ProductSection from "./componets/FeatureSection";
- 
  import Services from "./componets/Services";
  import TeamSection from "./componets/TeamSection";
  import Technologies from "./componets/Technologies";
  import Testimonials from "./componets/Testimonials";
-//  import InputSection from "./componets/InputSection";
+ import InputSection from "./componets/InputSection";
 //   import Footer from "./componets/Footer";
 
 
@@ -28,14 +24,12 @@ const App =() =>{
        < OverlapSection />
             <Process />   
            <ProductDescription />
-          {/* <WhatWeDo />    */}
-       {/* <FeatureSection /> */}
          <Services />  *
         <TeamSection />
        <Technologies /> 
        <Testimonials />  
-      {/* <InputSection />
-       <Footer />           */}
+       <InputSection /> 
+       {/* <Footer />            */}
     </div>
 
   );
