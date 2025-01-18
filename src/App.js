@@ -9,9 +9,9 @@ import OverlapSection from "./componets/OverlapSection";
 //  import ProductSection from "./componets/FeatureSection";
  
  import Services from "./componets/Services";
-//  import TeamSection from "./componets/TeamSection";
-//  import Technologies from "./componets/Technologies";
-//  import Testimonials from "./componets/Testimonials";
+ import TeamSection from "./componets/TeamSection";
+ import Technologies from "./componets/Technologies";
+ import Testimonials from "./componets/Testimonials";
 //  import InputSection from "./componets/InputSection";
 //   import Footer from "./componets/Footer";
 
@@ -31,11 +31,11 @@ const App =() =>{
           {/* <WhatWeDo />    */}
        {/* <FeatureSection /> */}
          <Services />  *
-       {/* <TeamSection />
-      <Technologies /> 
-      <Testimonials /> 
-      <InputSection />
-       <Footer />            */} 
+        <TeamSection />
+       <Technologies /> 
+       <Testimonials />  
+      {/* <InputSection />
+       <Footer />           */}
     </div>
 
   );
