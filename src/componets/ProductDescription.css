@@ -38,8 +38,8 @@
   font-size: 30px;
   font-weight: 700;
   /* text-align: justify; */
-  margin-bottom: 20px;
-  line-height: 1.4;
+  /* margin-bottom: 20px; */
+  /* line-height: 1.4; */
    padding: 10px 0px;
   word-spacing: 0; /* Removes extra space between words */
  letter-spacing: normal; /* Resets any letter spacing */
@@ -49,8 +49,8 @@
 
 .product-content p {
   font-size: 18px;
-  line-height: 20px;
-  text-align: justify;
+  line-height: 25px;
+  /* text-align: justify; */
    margin-bottom: 30px; 
   padding: 0px 0px;
   overflow: hidden;
@@ -98,9 +98,9 @@
    
   }
   .product-content p{
-    text-align: justify;
-    font-size: 14px;
-    line-height: 25px;
+    /* text-align: justify; */
+    font-size: 16px;
+    /* line-height: 25px; */
     
     
     

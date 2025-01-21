@@ -34,7 +34,7 @@
   /* Form Section */
   .form-section {
     flex: 1 1 450px;
-    max-width: 700px;
+    max-width: 650px;
     background: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -47,7 +47,7 @@
   .contact-form textarea {
 
     width: 100%; /* Adjust to container */
-    padding: 20px 10px 20px 5px;
+    padding: 15px 0px 15px 10px;
     margin: 10px 0px; 
     border: 1px solid #ddd; 
     border-radius: 10px;
@@ -92,7 +92,7 @@
   
   .contact-info {
     
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   
   .contact-info p {
@@ -113,9 +113,9 @@
   
   .contact-info span {
     font-size: 16px;
-    line-height: 20px;
+    /* line-height: 20px; */
     color: #000000; 
-    /* padding: 0px 60px; */
+   justify-content: center;
     
   }
   

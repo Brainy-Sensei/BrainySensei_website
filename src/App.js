@@ -20,7 +20,11 @@ const App =() =>{
   return(
     <div className="App">
            <Navbar />
-          <HeroSection  />
+          <HeroSection 
+           title="Empowering Businesses with Scalable and Secure Technology"
+           subtitle="We Are Here"
+           underline={true}
+            />
          < OverlapSection />
             <Process />   
            <ProductDescription />
