@@ -1,163 +1,170 @@
-/* InputSection.css */
+/* General Styles */
 
-/* General Layout */
-.contact-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 40px;
-  background-color: #f4f4f4;
-}
-
-.form-section {
-  flex: 1 1 45%;  /* Default width for larger screens */
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.form-section h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-.form-section h3 {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-form input,
-.contact-form textarea {
-  margin-bottom: 15px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 1rem;
-}
-
-.contact-form button {
-  padding: 10px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-.contact-form button:hover {
-  background-color: #0056b3;
-}
-
-/* Info Section */
-.info-section {
-  flex: 1 1 45%;  /* Default width for larger screens */
-  padding: 20px;
-}
-
-.contact-info {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.contact-icon {
-  font-size: 2rem;
-  color: #007bff;
-  margin-right: 15px;
-}
-
-.contact-details p {
-  font-weight: bold;
-  color: #333;
-}
-
-.contact-details span {
-  color: #666;
-}
-
-.social-icons {
-  margin-top: 30px;
-}
-
-.social-icons .social {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.social-icons .icons a {
-  font-size: 1.5rem;
-  color: #333;
-  margin-right: 15px;
-  transition: color 0.3s;
-}
-
-.social-icons .icons a:hover {
-  color: #007bff;
-}
-
-/* Responsive Styles for Tablets and Mobile */
-@media (max-width: 768px) {
+  
   .contact-container {
+    max-width: 1200px; /* Restrict container width */
+    /* margin: 40px auto;  */
+    padding: 50px 80px;
+    background-color: #0E1F51E5; /* Component background color */
+    /* border-radius: 8px; Optional rounded corners */
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); Subtle shadow for focus */
+  }
+  
+  .contact-heading {
+    text-align: center;
+    font-size: 18px;
+    color: #F45E31;
+    transform: translateY(1.5rem);
+  }
+  
+  .contact-subheading {
+    text-align: center;
+    font-size: 28px;
+    color: #FFFFFF;
+  }
+  
+  /* Content Layout */
+  .content-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: stretch;
+  }
+  
+  /* Form Section */
+  .form-section {
+    flex: 1 1 450px;
+    max-width: 700px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
     flex-direction: column;
-    align-items: center;  /* Center content for smaller screens */
   }
+  
+  .contact-form input,
+  .contact-form textarea {
 
-  .form-section,
+    width: 100%; /* Adjust to container */
+    padding: 20px 0px 20px 5px;
+    margin: 10px 0px; 
+    border: 1px solid #ddd; 
+    border-radius: 10px;
+    font-size: 14px;
+    background-color: #F7F7F7;
+  }
+  
+  .contact-form textarea {
+   
+    height: 100px;
+  }
+  
+  .contact-form button {
+    width: 100%; /* Full width */
+    max-width: 140px; /* Limit button width */
+    height: 50px;
+    padding: 10px;
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    align-self: center;
+  }
+  
+  .contact-form button:hover {
+    background-color: #e64a19;
+  }
+  
+  /* Info Section */
   .info-section {
-    flex: 1 1 100%;  /* Full width for mobile */
-    margin-bottom: 20px;
+    flex: 1 1 400px;
+    max-width: 300px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
   }
-
-  .contact-form input,
-  .contact-form textarea {
-    font-size: 0.9rem;  /* Slightly smaller font on mobile */
+  
+  .contact-info {
+    
+    margin-bottom: 30px;
   }
-
-  .contact-form button {
-    font-size: 0.9rem;
+  
+  .contact-info p {
+    font-size: 16px;
+    color: #F45E31;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
   }
-
-  .contact-icon {
-    font-size: 1.5rem;  /* Smaller icon size for mobile */
+  
+  .contact-info p svg {
+    font-size: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    color: #ff5722;
+    background-color: #F7F7F7;
   }
-
+  
+  .contact-info span {
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000; 
+    /* padding: 0px 60px; */
+    
+  }
+  
+   /* Social Icons * */
+  .social-icons {
+    
+    margin-top: 20px;
+    color: #F45E31;
+  }
+  
+  .social-icons p {
+    font-size: 18px;
+    font-weight: 700;
+    color: #004AAB;
+    margin-bottom: 10px;
+    transform: translate(2.2rem);
+  }
+  
+  .social-icons .icons {
+    font-size: 30px;
+    display: flex;
+    gap: 10px;
+    color: #F45E31;
+  }
+  
   .social-icons .icons a {
-    font-size: 1.2rem;
+    font-size: 30px;
+    color: #F45E31;
+    text-decoration: none;
   }
-}
-
-/* Further Adjustments for Small Mobile Devices */
-@media (max-width: 480px) {
-  .form-section h2 {
-    font-size: 1.5rem;  /* Smaller font size for headings */
+  
+  .social-icons .icons a:hover {
+    color: #ff5722;
   }
-
-  .form-section h3 {
-    font-size: 1rem;
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .content-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .form-section,
+    .info-section {
+      width: 100%;
+    }
+  
+    .contact-form button {
+      max-width: 100%; /* Adjust button width for small screens */
+    }
   }
-
-  .contact-form input,
-  .contact-form textarea {
-    font-size: 0.9rem;  /* Adjust input and textarea font size */
-  }
-
-  .contact-form button {
-    font-size: 0.9rem;
-  }
-
-  .contact-icon {
-    font-size: 1.3rem;  /* Further reduce icon size */
-  }
-
-  .social-icons .icons a {
-    font-size: 1.2rem;  /* Adjust icon size */
-  }
-}
+  

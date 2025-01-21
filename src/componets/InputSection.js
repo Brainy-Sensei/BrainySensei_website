@@ -4,7 +4,7 @@ import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaLinkedin, FaInstagram, FaTwit
 
 const contactInfo = [
   {
-    icon: <FaPhoneAlt/>,        
+    icon: <FaPhoneAlt />,
     title: "Call Anytime",
     details: "+91 8130587803",
   },
@@ -14,7 +14,7 @@ const contactInfo = [
     details: "support@brainsensei.com",
   },
   {
-    icon: <FaMapMarkerAlt/>,
+    icon: <FaMapMarkerAlt />,
     title: "Visit Us",
     details: "59-60, Block E, Noida Sector 3, Noida, Uttar Pradesh 201301",
   },
@@ -26,47 +26,39 @@ const socialIcons = [
   { icon: <FaTwitter />, link: "https://twitter.com" },
 ];
 
-const InputSection = () => {
+const App = () => {
   return (
     <div className="contact-container">
-      {/* Form Section */}
-      <div className="form-section">
-        <h2>Get In Touch</h2>
-        <h3>Hey! Let's Talk</h3>
-        <form className="contact-form">
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="Email" />
-          <input type="tel" placeholder="Phone" />
-          <textarea placeholder="Your Message"></textarea>
-          <button type="submit">Send Now</button>
-        </form>
-      </div>
-
-      {/* Info Section */}
-      <div className="info-section">
-        {contactInfo.map((info, index) => (
-          <div key={index} className="contact-info">
-            
-            <p>
-              {info.title}
-            </p>
-            <div className="contact-icon">
-            {info.icon}
+      <h2 className="contact-heading">Get In Touch</h2>
+      <h3 className="contact-subheading">Hey! Let's Talk</h3>
+      <div className="content-section">
+        <div className="form-section">
+          <form className="contact-form">
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+            <input type="tel" placeholder="Phone" />
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send Now</button>
+          </form>
+        </div>
+        <div className="info-section">
+          {contactInfo.map((info, index) => (
+            <div key={index} className="contact-info">
+              <p>
+                {info.icon} {info.title}
+              </p>
+              <span>{info.details}</span>
             </div>
-         
-            <span>{info.details}</span>
-           
-          </div>
-        ))}
-
-        <div className="social-icons">
-          <p className="social">Follow us</p>
-          <div className="icons">
-            {socialIcons.map((social, index) => (
-              <a key={index} href={social.link} target="_blank" rel="noopener noreferrer">
-                {social.icon}
-              </a>
-            ))}
+          ))}
+          <div className="social-icons">
+            <p>Follow us</p>
+            <div className="icons">
+              {socialIcons.map((social, index) => (
+                <a key={index} href={social.link} target="_blank" rel="noopener noreferrer">
+                  {social.icon}
+                </a>
+              ))}
+            </div>
           </div>
         </div>
       </div>
@@ -74,4 +66,4 @@ const InputSection = () => {
   );
 };
 
-export default InputSection;
+export default App;

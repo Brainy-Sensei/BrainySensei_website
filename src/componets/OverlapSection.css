@@ -1,11 +1,5 @@
 /* Section Styling */
-body{
-  margin: 0;
-  padding: 0;
-   font-family: "Raleway", serif; 
-   list-style: none; 
-  box-sizing: border-box;
-}
+
 .overlap-section {
 
   display: flex;

@@ -9,6 +9,8 @@ import OverlapSection from "./componets/OverlapSection";
  import Technologies from "./componets/Technologies";
  import Testimonials from "./componets/Testimonials";
  import InputSection from "./componets/InputSection";
+ 
+
 //   import Footer from "./componets/Footer";
 
 
@@ -28,8 +30,8 @@ const App =() =>{
         <TeamSection />
        <Technologies /> 
        <Testimonials />  
-       <InputSection /> 
-       {/* <Footer />            */}
+       < InputSection />
+        {/* <Footer />            * */}
     </div>
 
   );
