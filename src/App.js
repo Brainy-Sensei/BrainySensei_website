@@ -9,9 +9,7 @@ import OverlapSection from "./componets/OverlapSection";
  import Technologies from "./componets/Technologies";
  import Testimonials from "./componets/Testimonials";
  import InputSection from "./componets/InputSection";
- 
-
-//   import Footer from "./componets/Footer";
+  import Footer from "./componets/Footer";
 
 
 
@@ -21,9 +19,9 @@ import OverlapSection from "./componets/OverlapSection";
 const App =() =>{
   return(
     <div className="App">
-      <Navbar />
-         <HeroSection  />
-       < OverlapSection />
+           <Navbar />
+          <HeroSection  />
+         < OverlapSection />
             <Process />   
            <ProductDescription />
          <Services />  *
@@ -31,7 +29,7 @@ const App =() =>{
        <Technologies /> 
        <Testimonials />  
        < InputSection />
-        {/* <Footer />            * */}
+        <Footer />  
     </div>
 
   );

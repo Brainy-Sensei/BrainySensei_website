@@ -4,7 +4,7 @@
   .contact-container {
     max-width: 1200px; /* Restrict container width */
     /* margin: 40px auto;  */
-    padding: 50px 80px;
+    padding: 40px 80px;
     background-color: #0E1F51E5; /* Component background color */
     /* border-radius: 8px; Optional rounded corners */
     /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); Subtle shadow for focus */
@@ -47,7 +47,7 @@
   .contact-form textarea {
 
     width: 100%; /* Adjust to container */
-    padding: 20px 0px 20px 5px;
+    padding: 20px 10px 20px 5px;
     margin: 10px 0px; 
     border: 1px solid #ddd; 
     border-radius: 10px;
