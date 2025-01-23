@@ -1,6 +1,8 @@
 /* General Container Styles */
 
 .technologies-container {
+  width: 100%;
+  height: auto;
   padding: 2rem 1rem;
   background-color: #FFFFFF; /* Light background color */
   color: #333;

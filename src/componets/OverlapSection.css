@@ -1,12 +1,10 @@
-/* Section Styling */
-
 .overlap-section {
-
+ 
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 80px;
+  /* padding: 10px 20px; */
   /* gap: 20px; */
   background-color: #F7F7F7;
 }
@@ -137,3 +135,5 @@
     
   }
 }
+
+

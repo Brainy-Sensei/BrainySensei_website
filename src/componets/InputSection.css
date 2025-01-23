@@ -2,6 +2,7 @@
 
   
   .contact-container {
+    width: 100%;
     max-width: 1200px; /* Restrict container width */
     /* margin: 40px auto;  */
     padding: 40px 80px;
