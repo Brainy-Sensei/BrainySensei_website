@@ -32,7 +32,8 @@ const App =() =>{
          backgroundImage={backgroundImg}
            // Pass background image here
             />
-         < OverlapSection  mainImage={image}
+         < OverlapSection 
+          mainImage={image}
           overlapImage={image1}
          subtitle="Who we are"
         title="Innovative Software Solutions Tailored for Your Success"
@@ -41,7 +42,8 @@ const App =() =>{
         /> 
          
              <Process />   
-           <ProductDescription imageSrc={bannerImage}
+           <ProductDescription 
+           imageSrc={bannerImage}
           subtitle="What We Do"
          title="We Develop Products That People Love to Use."
          description="We are a team of skilled professionals specializing in Software Development, AI, EdTech solutions, and LLMs and chatbots, all united by a common goal of ensuring customer satisfaction. Our focus is on delivering innovative and comprehensive web solutions that enhance your business through technology."

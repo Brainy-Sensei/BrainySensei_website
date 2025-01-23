@@ -46,11 +46,8 @@ const App = () => {
             <div key={index} className="contact-info">
               <p>
                 {info.icon} {info.title}
-                
-               
               </p>
-              <span>{info.details}</span> 
-              
+              <span>{info.details}</span>
             </div>
           ))}
           <div className="social-icons">
