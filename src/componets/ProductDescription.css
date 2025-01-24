@@ -5,21 +5,22 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  /* padding: 10px 20px;  */
+  padding: 10px 20px; 
   background-color: #0E1F51;
+  border-radius: 5px;
   color: #FFFFFF;
 }
 
 .product-image img {
   width: 100%;
-  max-width: 450px;
+  max-width: 500px;
   height: auto;
   border-radius: 10px;
   padding: 0px;
 }
 
 .product-content {
-  max-width: 450px;
+  max-width: 500px;
   padding: 20px 40px 40px;
   transform:  translateY(-1.0rem);
  

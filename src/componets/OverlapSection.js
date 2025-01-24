@@ -1,14 +1,17 @@
 import React from "react";
 import "./OverlapSection.css";
 
-const OverlapSection = ({
-  mainImage,
-  overlapImage,
-  subtitle,
-  title,
-  description,
-  buttonLabel,
-}) => {
+const OverlapSection = (props) => {
+  
+  const {
+    mainImage,
+    overlapImage,
+    subtitle,
+    title,
+    description,
+    buttonLabel,
+  } = { ...props };
+
   return (
     <section className="overlap-section">
       <div className="image-container">
