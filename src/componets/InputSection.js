@@ -1,5 +1,5 @@
 import React from "react";
-import "./InputSection.css";
+import "./css/InputSection.css";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const contactInfo = [
@@ -26,7 +26,7 @@ const socialIcons = [
   { icon: <FaTwitter />, link: "https://twitter.com" },
 ];
 
-const App = () => {
+const InputSection = () => {
   return (
     <div className="contact-container">
       <h2 className="contact-heading">Get In Touch</h2>
@@ -45,7 +45,9 @@ const App = () => {
           {contactInfo.map((info, index) => (
             <div key={index} className="contact-info">
               <p>
-                {info.icon} {info.title}
+                {info.icon}
+                 {info.title}
+                 
               </p>
               <span>{info.details}</span>
             </div>
@@ -66,4 +68,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default InputSection;

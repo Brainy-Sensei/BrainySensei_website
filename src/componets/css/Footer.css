@@ -1,0 +1,160 @@
+/* General Footer Styling */
+.footer {
+  background-color: #0E1F51;
+  color: #F7F7F7;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Footer Section */
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+ .footer-section h4 {
+  /* text-decoration: underline; */
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #F7F7F7;
+  text-transform: uppercase;
+  
+}
+.footer-section.services h4,
+.footer-section.quick-links h4,
+.footer-section.get-in-touch h4 {
+  text-decoration: underline;
+  text-decoration-color: #F45E31; /* Custom underline color */
+  text-decoration-thickness: 2px; /* Thickness of the underline */
+  text-underline-offset: 3px; /* Distance between text and underline */
+}
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #F7F7F7;
+}
+
+/* Logo and Brainy Sensei Section */
+.logo-text-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo {
+  width: 45px;
+  height: 48px;
+ transform: translateY(0.08rem);
+}
+
+.p {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #F7F7F7;
+  padding: 0px 40px 0px 30px;
+  text-align: left;
+}
+
+/* Social Icons */
+.social-icons1 {
+  
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  transform: translate(1.6rem);
+}
+
+.social-icons1 a {
+  color: #F45E31;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.social-icons1 a:hover {
+  color: #F7F7F7;
+}
+
+/* Services and Quick Links */
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  color: #F7F7F7;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color:  #F45E31;
+  text-decoration: underline;
+}
+
+/* Get in Touch Section */
+.get-in-touch form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.get-in-touch input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.get-in-touch button {
+  width: 135px;
+  padding: 10px;
+  background-color:  #F45E31;;
+  color: #F7F7F7;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.get-in-touch button:hover {
+  background-color: #F45E31;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .logo-text-container {
+    justify-content: center;
+  }
+  .p{
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .social-icons1 {
+    justify-content: center;
+  }
+}

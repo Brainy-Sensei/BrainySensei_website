@@ -1,5 +1,5 @@
 import React from "react";
-import "./OverlapSection.css";
+import "./css/OverlapSection.css";
 
 const OverlapSection = (props) => {
   

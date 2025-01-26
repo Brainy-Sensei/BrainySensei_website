@@ -1,33 +1,25 @@
 import React, { useState } from "react";
-import "./Testimonials.css";
-import Ellipse4 from "../image/Ellipse 4.png"; // Update with your image path
-import Ellipse from "../image/Ellipse .png";  // Update with your image path
+import "./css/Testimonials.css";
 
-const testimonials = [
-  {
-    id: 1,
-    name: "",
-    role: "",
-    image: "",
-    text1: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed..",
-  },
-  {
-    id: 2,
-    name: "Daria Linney",
-    role: "CIO",
-    image: Ellipse4,
-    text: "  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed..",
-  },
-  {
-    id: 3,
-    name: "Samuel Karl",
-    role: "CEO",
-    image: Ellipse,
-    text: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed..",
-  },
-];
+const TestimonialCard = ({ name, role, image, text, text1 }) => (
+  <div className="testimonial-card">
+    <div className="testimonial-content">
+      <div className="testimonial-image-container">
+        {image && <img src={image} alt={name} className="testimonial-image" />}
+      </div>
+      <div className="testimonial-text-content">
+        {text && <p className="testimonial-text">{text}</p>}
+        {text1 && <p className="testimonial-text1">{text1}</p>}
+      </div>
+      <div className="testimonial-name-role">
+        <h4 className="testimonial-name">{name}</h4>
+        <p className="testimonial-role">{role}</p>
+      </div>
+    </div>
+  </div>
+);
 
-const Testimonials = () => {
+const Testimonials = ({ testimonials }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleIndicatorClick = (index) => {
@@ -40,32 +32,10 @@ const Testimonials = () => {
       <h3 className="testimonials-subheader">Testimonials</h3>
       <div className="testimonials-grid">
         {testimonials.map((testimonial, index) => (
-          <div
+          <TestimonialCard
             key={testimonial.id}
-            className={`testimonial-card ${
-              index === 1 ? "center-card" : "side-card"
-            }`}
-          >
-            <div className="testimonial-content">
-              <div className="testimonial-image-container">
-                {testimonial.image && (
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    className="testimonial-image"
-                  />
-                )}
-              </div>
-              <div className="testimonial-text-content">
-                <p className="testimonial-text">{testimonial.text}</p>
-                <p className="testimonial-text1">{testimonial.text1}</p>
-              </div>
-              <div className="testimonial-name-role">
-                <h4 className="testimonial-name">{testimonial.name}</h4>
-                <p className="testimonial-role">{testimonial.role}</p>
-              </div>
-            </div>
-          </div>
+            {...testimonial} // Spread operator to pass all properties as props
+          />
         ))}
       </div>
       <div className="carousel-indicators">

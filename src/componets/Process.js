@@ -1,5 +1,5 @@
 import React from "react";
-import "./Process.css";
+import "./css/Process.css";
 
 // A reusable ProcessCard component
 const ProcessCard = ({ icon, id, title, description }) => {

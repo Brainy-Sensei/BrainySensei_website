@@ -65,7 +65,7 @@
   max-width: 140px; /* Limit button width */
   height: 50px;
   padding: 10px;
-  background-color: #ff5722;
+  background-color: #F45E31;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -75,7 +75,7 @@
 }
 
 .contact-form button:hover {
-  background-color: #e64a19;
+  background-color: #F45E31;
 }
 
 /* Info Section */
@@ -104,19 +104,23 @@
 }
 
 .contact-info p svg {
-  font-size: 25px;
+  font-size: 22px;
   margin-right: 20px;
   padding: 10px;
-  color: #ff5722;
+  color: #F45E31;
   border-radius: 5px;
   background-color: #F7F7F7;
 }
 
 .contact-info span {
   font-size: 16px;
-  /* line-height: 20px; */
-  color: #000000; 
- justify-content: center;
+   line-height: 20px; 
+   color: #000000; 
+   text-align: justify;
+   
+  
+   
+ /* justify-content: center;  */
   
 }
 
@@ -138,8 +142,9 @@
 .social-icons .icons {
   font-size: 30px;
   display: flex;
-  gap: 10px;
+  gap: 20px;
   color: #F45E31;
+ 
 }
 
 .social-icons .icons a {
@@ -149,7 +154,7 @@
 }
 
 .social-icons .icons a:hover {
-  color: #ff5722;
+  color: #F45E31;
 }
 
 /* Responsive Styles */

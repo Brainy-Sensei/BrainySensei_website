@@ -1,5 +1,5 @@
 import React from "react";
-import "./ProductDescription.css";
+import "./css/ProductDescription.css";
 
 const ProductDescription = ({ imageSrc1, subtitle1, title1, description1, buttonText1 }) => {
   return (

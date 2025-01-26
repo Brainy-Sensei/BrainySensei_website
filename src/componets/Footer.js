@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.css';
+import './css/Footer.css';
 import { FaLinkedinIn, FaInstagram, FaTwitter } from 'react-icons/fa';
 import logo from '../image/logo.png';
  // Adjust the path as needed
@@ -27,15 +27,16 @@ const Footer = () => {
         {/* Services Section */}
         <div className="footer-section">
           <div className="footer-section services"> 
-            <h4>Services</h4></div>
+            <h4>Services</h4>
+            </div>
          
           <ul>
-            <li>Software Development</li>
-            <li>Generative AI</li>
-            <li>LLM and Chatbot Development</li>
-            <li>AI Customization</li>
-            <li>Tech Team for Your Company</li>
-            <li>Edtech Solution</li>
+          <li><a href="#software-development">Software Development</a></li>
+            <li><a href="#generative-ai">Generative AI</a></li>
+            <li><a href="#llm-chatbot">LLM and Chatbot Development</a></li>
+            <li><a href="#ai-customization">AI Customization</a></li>
+            <li><a href="#tech-team">Tech Team for Your Company</a></li>
+            <li><a href="#edtech-solution">Edtech Solution</a></li>
           </ul>
         </div>
 
@@ -46,11 +47,11 @@ const Footer = () => {
           </div>
           
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Portfolio</li>
-            <li>Contact</li>
+          <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
 
