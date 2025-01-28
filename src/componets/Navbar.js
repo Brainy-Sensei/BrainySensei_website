@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import "./css/Navbar.css"
-import logo from "../image/logo.png"
+import { NavLink } from "react-router-dom";
+import "./css/Navbar.css";
+import logo from "../image/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,24 +17,61 @@ const Navbar = () => {
           <img src={logo} alt="Brainy Sensei" />
           <span>Brainy Sensei</span>
         </div>
-        <div className={`menu ${isOpen ? "open" : ""}`}>
-          <a href="#home" className="menu-item active">
-            Home
-          </a>
-          <a href="#about" className="menu-item">
-            About
-          </a>
-          <a href="#services" className="menu-item">
-            Services
-          </a>
-          <a href="#portfolio" className="menu-item">
-            Portfolio
-          </a>
-          <a href="#contact" className="menu-item">
-            Contact
-          </a>
-          <button className="btn-contact">Get In Touch</button>
-        </div>
+        <ul className={`menu ${isOpen ? "open" : ""}`}>
+          <li>
+            <NavLink
+              to="/home"
+              className={({ isActive }) =>
+                isActive ? "menu-item active" : "menu-item"
+              }
+            >
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                isActive ? "menu-item active" : "menu-item"
+              }
+            >
+              About
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/services"
+              className={({ isActive }) =>
+                isActive ? "menu-item active" : "menu-item"
+              }
+            >
+              Services
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/portfolio"
+              className={({ isActive }) =>
+                isActive ? "menu-item active" : "menu-item"
+              }
+            >
+              Portfolio
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                isActive ? "menu-item active" : "menu-item"
+              }
+            >
+              Contact
+            </NavLink>
+          </li>
+          <li>
+            <button className="btn-contact">Get In Touch</button>
+          </li>
+        </ul>
         <div className="hamburger" onClick={toggleMenu}>
           <div className="line"></div>
           <div className="line"></div>

@@ -2,13 +2,12 @@ import React from 'react';
 import './css/Footer.css';
 import { FaLinkedinIn, FaInstagram, FaTwitter } from 'react-icons/fa';
 import logo from '../image/logo.png';
- // Adjust the path as needed
-
+ 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        {/* Brainy Sensei Section */}
+      
         <div className="footer-section brainy-sensei">
           <div className="logo-text-container">
             <img src={logo} alt="Brainy Sensei Logo" className="footer-logo" />
@@ -24,7 +23,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Services Section */}
+      
         <div className="footer-section">
           <div className="footer-section services"> 
             <h4>Services</h4>
@@ -40,7 +39,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Quick Links Section */}
+       
         <div className="footer-section">
           <div className="footer-section quick-links">
             <h4>Quick Link</h4>

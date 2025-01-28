@@ -1,7 +1,7 @@
 import React from "react";
 import "./css/Process.css";
 
-// A reusable ProcessCard component
+
 const ProcessCard = ({ icon, id, title, description }) => {
   return (
     <div className="process-card">
@@ -18,7 +18,7 @@ const ProcessCard = ({ icon, id, title, description }) => {
   );
 };
 
-// Main Process component
+
 const Process = ({ steps }) => {
   return (
     <section className="process-section">

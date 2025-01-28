@@ -1,17 +1,17 @@
 import React from "react";
-import Navbar from "./componets/Navbar";
+ import Navbar from "./componets/Navbar";
 import Hero from "./componets/Hero";
 import OverlapSection from "./componets/OverlapSection";
 import Process from "./componets/Process";
 import ProductDescription from"./componets/ProductDescription";
-import Services from "./componets/Services";
+import Services from "./componets/Services"
  import TeamSection from "./componets/TeamSection";
  import Technologies from "./componets/Technologies";
  import Testimonials from "./componets/Testimonials";
  import InputSection from "./componets/InputSection";
-  import Footer from "./componets/Footer";
-  import Home from "./componets/Pages/Home";
-
+ import Footer from "./componets/Footer";
+ import {  Routes, Route } from "react-router-dom";
+ 
 
 import background from "./image/background.jpg"
 import image from "./image/image.png"
@@ -51,6 +51,12 @@ import {
 
 import Ellipse4 from "./image/Ellipse 4.png";
 import Ellipse from "./image/Ellipse .png";
+import Home  from "./Pages/Home"
+import About from "./Pages/About";
+import Service from "./Pages/Service";
+import Portfolieo from "./Pages/Portfolieo"
+import Contact from "./Pages/Contact";
+import Layout from "./layout/Layout";
 
 
 
@@ -69,8 +75,8 @@ const App =() =>{
   };
 
   const overlapProps = {
-    mainImage:  image,// Replace with your actual image path
-    overlapImage: image1 , // Replace with your actual image path
+    mainImage:  image,
+    overlapImage: image1 , 
     subtitle: "Who We Are",
     title: "Innovative Software Solutions Tailored for Your Success",
     description:
@@ -247,26 +253,36 @@ const App =() =>{
 
  
 
-
   
   
 
   
   return(
-    <div className="App">
+         
+
+     <div className="App">
      
-            <Navbar />
-           <Hero styleProps={heroStyle} {...heroProps} />
-           <OverlapSection {...overlapProps} />
-           <Process steps={steps} />
+              <Navbar /> 
+                <Hero styleProps={heroStyle} {...heroProps} />
+             <OverlapSection {...overlapProps} />
+            <Process steps={steps} />
            <ProductDescription {...productProps} />
            <Services services={servicesData} />
-           <TeamSection teamMembers={teamData} />
+            <TeamSection teamMembers={teamData} />
            <Technologies {...{ data: technologiesData }} />
-           <Testimonials testimonials={testimonialsData} />
-          < InputSection />
-           <Footer />   
-           <Home />   
+          <Testimonials testimonials={testimonialsData} /> 
+         < InputSection />
+            <Footer />        
+          <Routes>
+                 <Route  path="/" element= {<Layout />}/>
+             <Route path= "/home" element={<Home />} />
+             <Route path="about" element={<About />} />
+             <Route path="service" element={<Service />} />
+            <Route path="portfolieo" element={<Portfolieo />} />
+            <Route path="contact" element={<Contact />} />
+
+           </Routes> 
+         
       </div>
 
   );
