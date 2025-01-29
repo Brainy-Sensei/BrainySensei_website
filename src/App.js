@@ -10,19 +10,26 @@ import Services from "./componets/Services"
  import Testimonials from "./componets/Testimonials";
  import InputSection from "./componets/InputSection";
  import Footer from "./componets/Footer";
+ 
  import {  Routes, Route } from "react-router-dom";
  
-
+ import AbhishekShankar from "./image/abhishek-shankar.jpg";
+ import ShwetaSrivastava from "./image/shweta-srivastava.jpg";
+ import DhariniPandey from "./image/dharini-panday.jpg";
+ import PoojaDhaker from "./image/pooja-dhaker.jpg";
 import background from "./image/background.jpg"
 import image from "./image/image.png"
 import image1 from "./image/image1.png"
 import { icon } from "@fortawesome/fontawesome-svg-core";
 import banner from "./image/bannerImage.png"
 import { FaLaptopCode, FaRobot, FaComments, FaBrain, FaUsers, FaGraduationCap } from "react-icons/fa";
-import AbhishekShankar from "./image/abhishek-shankar.jpg";
-import ShwetaSrivastava from "./image/shweta-srivastava.jpg";
-import DhariniPandey from "./image/dharini-panday.jpg";
-import PoojaDhaker from "./image/pooja-dhaker.jpg";
+import {
+  
+  
+  teamData,
+  
+} from "./data/Data"
+
 import {
   FaJs,
   FaJava,
@@ -250,8 +257,7 @@ const App =() =>{
     },
   ];
   
-
- 
+  
 
   
   
@@ -272,9 +278,10 @@ const App =() =>{
            <Technologies {...{ data: technologiesData }} />
           <Testimonials testimonials={testimonialsData} /> 
          < InputSection />
-            <Footer />        
+            <Footer /> 
+           
           <Routes>
-                 <Route  path="/" element= {<Layout />}/>
+               <Route  path="/" element= {<Layout />}/>
              <Route path= "/home" element={<Home />} />
              <Route path="about" element={<About />} />
              <Route path="service" element={<Service />} />

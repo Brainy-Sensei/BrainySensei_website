@@ -1,7 +1,9 @@
 import React from "react";
 import "./css/TeamSection.css";
+import { teamData } from "../data/Data";
 
-// Child component for rendering a single team member
+
+
 const TeamCard = ({ name, role, image }) => {
   return (
     <div className="team-card">
@@ -12,15 +14,17 @@ const TeamCard = ({ name, role, image }) => {
   );
 };
 
-// Main TeamSection component
-const TeamSection = ({ teamMembers }) => {
+
+const TeamSection = ({ teamMembers,   }) => {
   return (
     <div className="team-section">
       <h1>Team</h1>
       <h2>Our Team</h2>
       <div className="team-container">
         {teamMembers.map((member, index) => (
-          <TeamCard key={index} {...member} />
+          <TeamCard key={index} {...teamMembers}
+      
+          />
         ))}
       </div>
     </div>
